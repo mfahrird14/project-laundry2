@@ -20,8 +20,8 @@
         <form action="{{ route('login') }}" method="POST">
             @csrf
             <div class="mb-4">
-                <label class="block text-sm font-medium">Email</label>
-                <input type="email" name="email" class="w-full p-2 mt-1 border rounded-lg" required>
+                <label class="block text-sm font-medium">Username</label>
+                <input type="text" name="username" class="w-full p-2 mt-1 border rounded-lg" required>
             </div>
             <div class="mb-4">
                 <label class="block text-sm font-medium">Password</label>
@@ -31,6 +31,11 @@
                 Login
             </button>
         </form>
+
+        <div class="mt-4 text-center">
+            <span class="text-sm">Belum punya akun?</span>
+            <a href="{{ route('register') }}" class="text-blue-600 hover:underline">Daftar di sini</a>
+        </div>
     </div>
 </body>
 </html>

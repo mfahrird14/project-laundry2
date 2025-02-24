@@ -9,12 +9,12 @@
         .animated-hr {
             position: relative;
             opacity: 0;
-            transform: translateY(25px); /* Bergerak dari bawah ke atas */
+            transform: translateY(5px); /* Bergerak dari bawah ke atas */
             transition: opacity 0.5s ease-in-out, transform 2s ease-in-out;
         }
 
         .animated-hr.visible {
-            opacity: 1;
+            opacity: 2;
             transform: translateY(0);
         }
     </style>
@@ -163,6 +163,7 @@
         </div>
         <br>     
     </div>
+    <p></p>
 
     <script>
         document.addEventListener("scroll", function () {
